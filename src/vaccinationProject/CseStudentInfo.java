@@ -7,33 +7,33 @@ import java.util.Date;
 import java.util.Formatter;
 import java.util.Scanner;
 
-public class StudentInfo {
-    StudentInfo() throws FileNotFoundException {
+public class CseStudentInfo {
+    CseStudentInfo() throws FileNotFoundException {
 
         VaccinationDate vaccinationDate = new VaccinationDate();
-        System.out.println("\nStudentInfo class-");
+        System.out.println("\nData Input to CSE Students- ");
         int a = 0;
-        String name, department,section;
+        String name,section;
         int id, batch;
+
         try {
-            Formatter formatter2 = new Formatter("C:/COVID19  Vaccination  Project/DataEntryList/StudentsInfo.txt");
+            Formatter formatter2 = new Formatter("C:/COVID19  Vaccination  Project/DataEntryList/CSE Student Info.txt");
             Scanner input = new Scanner(System.in);
 
-            System.out.print("Enter Your Department: ");
-            department = input.next();
             System.out.print("Enter Student ID: ");
             id = input.nextInt();
             System.out.print("Enter name: ");
             name = input.next();
 
-    // Computer Science & Engineering
-        if (department.equals("CSE")) {
-                a = vaccinationDate.time(20);
-                System.out.print("Enter Your Batch: ");
-                batch = input.nextInt();
-                if (batch == 53) {
-                    System.out.print("Enter Your Section: ");
-                    section = input.next();
+// Computer Science & Engineering
+
+
+         a = vaccinationDate.time(20);
+         System.out.print("Enter Your Batch: ");
+         batch = input.nextInt();
+         if (batch == 53) {
+              System.out.print("Enter Your Section: ");
+                 section = input.next();
                     if (section.equals("A"))
                     {
                         System.out.println("\nThank You," + name + " .\nYou Registration is now complete.");
@@ -74,8 +74,8 @@ public class StudentInfo {
                     else {
                         System.out.println("Sorry Section didn't match");
                     }
-                }
-                else if (batch == 52)
+         }
+         else if (batch == 52)
                 {
                     System.out.println("\nThank You," +name+ ".You Registration is complete");
                     System.out.println("Your Vaccination Date is "+a+" October");
@@ -88,26 +88,26 @@ public class StudentInfo {
                     System.out.println("You must be join this day 12.30am to 01.00am.");
 
                 }
-                else if (batch==50)
+         else if (batch==50)
                 {
                     System.out.println("\nThank You," +name+ ".You Registration is complete");
                     System.out.println("Your Vaccination Date is "+a+" October");
                     System.out.println("You must be join this day 01.30am to 02.00am.");
 
                 }
-                else if (batch==49)
+         else if (batch==49)
                 {
                     System.out.println("\nThank You," +name+ ".You Registration is complete");
                     System.out.println("Your Vaccination Date is "+a+" October");
                     System.out.println("You must be join this day 02.00am to 02.30am.");
                 }
-                else
+         else
                 {
                     System.out.println("Sorry Your Department or  Batch number didn't match");
                 }
 
-            }
-            formatter2.format("%s %s %s", department, id, name);
+
+            formatter2.format("%s %s ", id, name);
             formatter2.close();
 
 
@@ -116,12 +116,12 @@ public class StudentInfo {
             System.out.println(e);
         }
         try {
-            File file = new File("C:/COVID19  Vaccination  Project/DataEntryList/StudentsInfo.txt");
+            File file = new File("C:/COVID19  Vaccination  Project/DataEntryList/CSE Student Info.txt");
             Scanner scanner = new Scanner(file);
             while (scanner.hasNext()) {
 
 
-                String fulldepartment = scanner.next();
+              //  String fulldepartment = scanner.next();
                 String fullid = scanner.next();
                 String fullname = scanner.next();
 
@@ -130,8 +130,8 @@ public class StudentInfo {
                 System.out.println(" *****************************");
                 System.out.println("Vaccine Application Card");
                 System.out.println("Name: " + fullname);
-                System.out.print("Department: " + fulldepartment);
-                System.out.print("\nStudent ID: " + fullid);
+             //   System.out.print("Department: " + fulldepartment);
+                System.out.print("Student ID: " + fullid);
                 //System.out.println("\nDate:" + a + "September");
                 SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd/MM/YYYY");
                 Date date=new Date();

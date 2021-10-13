@@ -13,7 +13,6 @@ public class Main {
         VaccinationDate vaccinationDate = new VaccinationDate();
 
 
-        //int a = 0;
         Scanner input = new Scanner(System.in);
         System.out.print("\nAre you member Of Leading University(Yes/No): ");
         String identity = input.next();
@@ -28,9 +27,115 @@ public class Main {
             System.out.print("Enter your Choose (1-3): ");
             int n = in.nextInt();
 
-            if (n == 1) {
-                StudentInfo studentInfo1 = new StudentInfo();
-            } else if (n == 2) {
+        switch (n) {
+          case 1:
+                    System.out.println("\nPlease select Your Dept- ");
+
+                    System.out.println("*******************************************************");
+                    System.out.println("1.Electrical and Electronic Engineering-(EEE) ");
+                    System.out.println("2.Computer Science and Engineering-(CSE)");
+                    System.out.println("3.Tourism & Hospitality Management-(THM) ");
+                    System.out.println("4.Business Administration-(BBA)");
+                    System.out.println("5.Civil Engineering-(CE) ");
+                    System.out.println("6.Islamic Studies-(IS) ");
+                    System.out.println("7.Architecture-(AT) ");
+                    System.out.println("8.Public Health-(PH) ");
+                    System.out.println("9. English-(ENG) ");
+                    System.out.println("10.Bangla-(BAN) ");
+                    System.out.println("11.Law-(LAW) ");
+                    System.out.println("***************************************************");
+
+
+                    Scanner inp = new Scanner(System.in);
+                    System.out.print("\nSelect your Department (1-11): ");
+                    int dept = inp.nextInt();
+                    if (dept == 1)
+                    {
+                        EeeStudentInfo studentInfo1 = new EeeStudentInfo();
+                    }
+                    else if (dept == 2)
+                    {
+                        CseStudentInfo studentInfo2 = new CseStudentInfo();
+                    }
+                    else if (dept == 3)
+                    {
+                        ThmStudentInfo studentInfo3 = new ThmStudentInfo();
+                    }
+                    else if (dept == 4)
+                    {
+                        BbaStudentInfo studentInfo4 = new BbaStudentInfo();
+                    }
+                    else if (dept == 5)
+                    {
+                        CeStudentInfo studentInfo5 = new CeStudentInfo();
+                    }
+                    else if (dept == 6)
+                    {
+                        IsStudentInfo studentInfo6 = new IsStudentInfo();
+                    }
+                    else if (dept == 7)
+                    {
+                        AtStudentInfo studentInfo7 = new AtStudentInfo();
+                    }
+                    else if (dept == 8)
+                    {
+                        PhStudentInfo studentInfo8 = new PhStudentInfo();
+                    }
+                    else if (dept == 9)
+                    {
+                        EngStudentInfo studentInfo9 = new EngStudentInfo();
+                    }
+                    else if (dept == 10)
+                    {
+                        BanStudentInfo studentInfo10 = new BanStudentInfo();
+                    }
+                    else if (dept == 11)
+                    {
+                        LawStudentInfo studentInfo11 = new LawStudentInfo();
+                    }
+                    break;
+
+           case 2:
+                    TeacherInfo teacherInfo = new TeacherInfo();
+                    break;
+           case 3:
+                    EmployeeInfo employeeInfo = new EmployeeInfo();
+
+           default:
+                    System.out.println("*************Invalid Integer Value Selected*****************");
+
+            }
+        }
+        else if (identity.equals("No"))
+        {
+            System.out.println("Sorry You are not Permit");
+        }
+        else
+        {
+            System.out.println("******************Invalid Input Type*****************************");
+        }
+    }
+}
+
+
+
+        /*    if (n == 1) {
+                System.out.println("\nPlease select Your Dept- ");
+                System.out.println("1. CSE");
+                System.out.println("2. Eee ");
+
+                Scanner inp = new Scanner(System.in);
+                System.out.print("Enter your Choose (1-3): ");
+                int dept = inp.nextInt();
+                if (dept == 1) {
+                    StudentInfo studentInfo1 = new StudentInfo();
+                } else if (dept == 2) {
+                    EeeStudentInfo eeestudentInfo1 = new EeeStudentInfo();
+
+                }
+            }
+
+             else if (n == 2) {
                 TeacherInfo teacherInfo = new TeacherInfo();
             } else if (n == 3) {
                 EmployeeInfo employeeInfo = new EmployeeInfo();
@@ -49,5 +154,4 @@ public class Main {
             System.out.println("******************Invalid Input Type*****************************");
         }
     }
-}
-
+}*/
