@@ -11,7 +11,7 @@ public class EeeStudentInfo {
     EeeStudentInfo() throws FileNotFoundException {
 
         VaccinationDate vaccinationDate = new VaccinationDate();
-        System.out.println("\n Data Input to EEE Students-");
+        System.out.println("\nData Input to EEE Students-");
         int a = 0;
         String name, department,section;
         int id, batch;
@@ -30,11 +30,13 @@ public class EeeStudentInfo {
             batch = input.nextInt();
             if (batch == 19)
             {
+                System.out.println("\nThank You," +name+ ".You Registration is complete");
                 System.out.println("Your Vaccination Date is "+a+" October");
                 System.out.println("You must be join this day 10.00am to 12.00am.");
             }
             else if (batch == 20)
             {
+                System.out.println("\nThank You," +name+ ".You Registration is now fully complete");
                 System.out.println("Your Vaccination Date is "+a+" October");
                 System.out.println("You must be join this day 01.00pm to 03.00pm.");
             }
@@ -60,22 +62,35 @@ public class EeeStudentInfo {
             String fullid = scanner.next();
             String fullname = scanner.next();
 
-
             System.out.println();
-            System.out.println(" *****************************");
-            System.out.println("Vaccine Application Card");
-            System.out.println("Name: " + fullname);
+            System.out.println("*********************************************************");
+            System.out.println("Vaccine Application Card For EEE Department-");
+            System.out.println("\nName: " +fullname);
             System.out.print("Student ID: " + fullid);
             SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd/MM/YYYY");
             Date date=new Date();
-            System.out.print("\nApplication Date: "+simpleDateFormat.format(date));
+            System.out.print("\nApplication Date: "+simpleDateFormat.format(date)+"");
+            System.out.println("\n\nFirst Doze Vaccine Name: ");
+            System.out.println("First Doze Received Date: ");
+            System.out.println("Second Doze Vaccine Name: ");
+            System.out.println("Second Doze Received Date: ");
+            /*System.out.println("\n\nVaccine Name: ");
+            System.out.println("First Doze Received Date: ");
+            System.out.println("Second Doze Received Date: ");*/
+            System.out.println("Vaccine Sender Name: ");
+            System.out.println("Vaccine Sender Signature: ");
+            System.out.println("\n************************************************************");
+            System.out.println("[N.B~ This Application card must be brought with you on the day of vaccination]");
         }
-        scanner.close();
-    } catch (FileNotFoundException e) {
-        System.out.println(e);
+
+            scanner.close();
+
+        } catch (FileNotFoundException e) {
+
+            System.out.println(e);
+
+        }
 
     }
-}
-}
 
-
+}

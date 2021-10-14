@@ -32,7 +32,13 @@ public class Main {
                     System.out.println("\nPlease select Your Dept- ");
 
                     System.out.println("*******************************************************");
-                    System.out.println("1.Electrical and Electronic Engineering-(EEE) ");
+              System.out.println("1.EEE Department\t\t 2.CSE Department");
+              System.out.println("3.THM Department\t\t 4.BBA Department");
+              System.out.println("5.CE Department\t\t\t 6.IS Department");
+              System.out.println("7.AT Department\t\t\t 8.PH Department");
+              System.out.println("9.ENG Department\t\t 10.BAN Department");
+              System.out.println("11.LAW Department");
+                 /*   System.out.println("1.Electrical and Electronic Engineering-(EEE) ");
                     System.out.println("2.Computer Science and Engineering-(CSE)");
                     System.out.println("3.Tourism & Hospitality Management-(THM) ");
                     System.out.println("4.Business Administration-(BBA)");
@@ -42,12 +48,12 @@ public class Main {
                     System.out.println("8.Public Health-(PH) ");
                     System.out.println("9. English-(ENG) ");
                     System.out.println("10.Bangla-(BAN) ");
-                    System.out.println("11.Law-(LAW) ");
+                    System.out.println("11.Law-(LAW) ");*/
                     System.out.println("***************************************************");
 
 
                     Scanner inp = new Scanner(System.in);
-                    System.out.print("\nSelect your Department (1-11): ");
+                    System.out.print("Select your Department (1-11): ");
                     int dept = inp.nextInt();
                     if (dept == 1)
                     {

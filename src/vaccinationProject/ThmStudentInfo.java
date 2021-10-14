@@ -46,10 +46,13 @@ public class ThmStudentInfo {
             formatter2.close();
 
 
-        } catch(
+        }
+
+        catch(
                 FileNotFoundException e){
             System.out.println(e);
         }
+
         try {
             File file = new File("C:/COVID19  Vaccination  Project/DataEntryList/THM Students Info.txt");
             Scanner scanner = new Scanner(file);
@@ -62,19 +65,31 @@ public class ThmStudentInfo {
 
 
                 System.out.println();
-                System.out.println(" *****************************");
-                System.out.println("Vaccine Application Card");
+                System.out.println("******************************");
+                System.out.println("Vaccine Application Card-");
                 System.out.println("Name: " + fullname);
                 System.out.print("Student ID: " + fullid);
                 SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd/MM/YYYY");
                 Date date=new Date();
                 System.out.print("\nApplication Date: "+simpleDateFormat.format(date));
+                System.out.println("\n\nVaccine Name: ");
+                System.out.println("First Doze Received Date: ");
+                System.out.println("Second Doze Received Date: ");
+                System.out.println("Vaccine Sender Name: ");
+                System.out.println("Vaccine Sender Signature: ");
+                System.out.println("******************************");
+                System.out.println("[N.B~ This Application card must be brought with you on the day of vaccination]");
             }
+
             scanner.close();
+
         } catch (FileNotFoundException e) {
+
             System.out.println(e);
 
         }
+
     }
+
 }
 
