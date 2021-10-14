@@ -65,7 +65,7 @@ public class EeeStudentInfo {
             System.out.println();
             System.out.println("*********************************************************");
             System.out.println("Vaccine Application Card For EEE Department-");
-            System.out.println("\nName: " +fullname);
+            System.out.println("Student Name: " +fullname);
             System.out.print("Student ID: " + fullid);
             SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd/MM/YYYY");
             Date date=new Date();
