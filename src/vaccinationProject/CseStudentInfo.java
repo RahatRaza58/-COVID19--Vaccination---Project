@@ -121,21 +121,27 @@ public class CseStudentInfo {
             while (scanner.hasNext()) {
 
 
-              //  String fulldepartment = scanner.next();
+
                 String fullid = scanner.next();
                 String fullname = scanner.next();
 
 
                 System.out.println();
-                System.out.println(" *****************************");
-                System.out.println("Vaccine Application Card");
+                System.out.println("***************************************");
+                System.out.println("Vaccine Application Card For CSE Department-");
                 System.out.println("Name: " + fullname);
-             //   System.out.print("Department: " + fulldepartment);
                 System.out.print("Student ID: " + fullid);
-                //System.out.println("\nDate:" + a + "September");
                 SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd/MM/YYYY");
                 Date date=new Date();
                 System.out.print("\nApplication Date: "+simpleDateFormat.format(date));
+                System.out.println("\n\nFirst Doze Vaccine Name: ");
+                System.out.println("First Doze Received Date: ");
+                System.out.println("Second Doze Vaccine Name: ");
+                System.out.println("Second Doze Received Date: ");
+                System.out.println("Vaccine Sender Name: ");
+                System.out.println("Vaccine Sender Signature: ");
+                System.out.println("\n*************************************");
+                System.out.println("[N.B~ This Application card must be brought with you on the day of vaccination]");
             }
             scanner.close();
         } catch (FileNotFoundException e) {

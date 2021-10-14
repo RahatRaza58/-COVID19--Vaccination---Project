@@ -74,9 +74,6 @@ public class EeeStudentInfo {
             System.out.println("First Doze Received Date: ");
             System.out.println("Second Doze Vaccine Name: ");
             System.out.println("Second Doze Received Date: ");
-            /*System.out.println("\n\nVaccine Name: ");
-            System.out.println("First Doze Received Date: ");
-            System.out.println("Second Doze Received Date: ");*/
             System.out.println("Vaccine Sender Name: ");
             System.out.println("Vaccine Sender Signature: ");
             System.out.println("\n************************************************************");
