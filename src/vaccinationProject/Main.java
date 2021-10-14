@@ -35,7 +35,7 @@ public class Main {
               System.out.println("1.EEE Department\t\t 2.CSE Department");
               System.out.println("3.THM Department\t\t 4.BBA Department");
               System.out.println("5.CE Department\t\t\t 6.IS Department");
-              System.out.println("7.AT Department\t\t\t 8.PH Department");
+              System.out.println("7.ART Department\t\t\t 8.PH Department");
               System.out.println("9.ENG Department\t\t 10.BAN Department");
               System.out.println("11.LAW Department");
                  /*   System.out.println("1.Electrical and Electronic Engineering-(EEE) ");
@@ -81,7 +81,7 @@ public class Main {
                     }
                     else if (dept == 7)
                     {
-                        AtStudentInfo studentInfo7 = new AtStudentInfo();
+                        ArtStudentInfo studentInfo7 = new ArtStudentInfo();
                     }
                     else if (dept == 8)
                     {
