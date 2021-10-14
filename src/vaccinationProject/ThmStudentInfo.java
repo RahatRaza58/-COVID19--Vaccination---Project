@@ -66,7 +66,7 @@ public class ThmStudentInfo {
 
                 System.out.println();
                 System.out.println("******************************");
-                System.out.println("Vaccine Application Card-");
+                System.out.println("Vaccine Application Card For Tourism and Hospitality Management -");
                 System.out.println("Name: " + fullname);
                 System.out.print("Student ID: " + fullid);
                 SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd/MM/YYYY");
