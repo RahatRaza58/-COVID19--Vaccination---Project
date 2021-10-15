@@ -14,10 +14,10 @@ public class Main {
 
 
         Scanner input = new Scanner(System.in);
-        System.out.print("\nAre you member Of Leading University(Yes/No): ");
+        System.out.print("\nAre you member Of Leading University(Y/N): ");
         String identity = input.next();
 
-        if (identity.equals("Yes")) {
+        if (identity.equals("Y")) {
             System.out.println("Please select Your Occupation- ");
             System.out.println("1. Student");
             System.out.println("2. Teacher ");
@@ -35,7 +35,7 @@ public class Main {
               System.out.println("1.EEE Department\t\t 2.CSE Department");
               System.out.println("3.THM Department\t\t 4.BBA Department");
               System.out.println("5.CE Department\t\t\t 6.IS Department");
-              System.out.println("7.ART Department\t\t\t 8.PH Department");
+              System.out.println("7.ART Department\t\t 8.PH Department");
               System.out.println("9.ENG Department\t\t 10.BAN Department");
               System.out.println("11.LAW Department");
                  /*   System.out.println("1.Electrical and Electronic Engineering-(EEE) ");
@@ -112,7 +112,7 @@ public class Main {
 
             }
         }
-        else if (identity.equals("No"))
+        else if (identity.equals("N"))
         {
             System.out.println("Sorry You are not Permit");
         }
