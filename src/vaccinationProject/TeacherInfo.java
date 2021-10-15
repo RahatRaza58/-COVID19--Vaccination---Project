@@ -11,7 +11,8 @@ public class TeacherInfo {
     TeacherInfo() throws FileNotFoundException   {
 
         VaccinationDate vaccinationDate = new VaccinationDate();
-        System.out.println("\nTeacherInfo class-");
+        System.out.println("****************************************");
+        System.out.println("Teacher Information Input -");
         int s=0;
         s = vaccinationDate.time(20);
 
@@ -26,6 +27,7 @@ public class TeacherInfo {
             name=input.next();
             System.out.print("Enter  Department:");
             department=input.next();
+            System.out.println("****************************************");
 
 
 
@@ -47,7 +49,7 @@ public class TeacherInfo {
                 String fulldepartment=scanner.next();
 
                 System.out.println();
-                System.out.println("*********************************************************");
+                System.out.println("****************************************");
                 System.out.println("Vaccine Application Card For Teachers-");
                 System.out.println("Name: "+fullname );
                 System.out.println("Department:"+fulldepartment);
@@ -61,7 +63,7 @@ public class TeacherInfo {
                 System.out.println("Second Doze Received Date: ");
                 System.out.println("Vaccine Sender Name: ");
                 System.out.println("Vaccine Sender Signature: ");
-                System.out.println("\n************************************************************");
+                System.out.println("\n****************************************");
                 System.out.println("[N.B~ This Application card must be brought with you on the day of vaccination]");
 
             }

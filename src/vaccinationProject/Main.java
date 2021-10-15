@@ -14,14 +14,18 @@ public class Main {
 
 
         Scanner input = new Scanner(System.in);
-        System.out.print("\nAre you member Of Leading University(Y/N): ");
+        System.out.print("Are you member Of Leading University(Y/N): ");
         String identity = input.next();
 
         if (identity.equals("Y")) {
+            System.out.println("****************************************");
             System.out.println("Please select Your Occupation- ");
             System.out.println("1. Student");
             System.out.println("2. Teacher ");
             System.out.println("3. Employer");
+            System.out.println("****************************************");
+
+
 
             Scanner in = new Scanner(System.in);
             System.out.print("Enter your Choose (1-3): ");
