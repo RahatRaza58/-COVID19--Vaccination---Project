@@ -13,7 +13,7 @@ public class CseStudentInfo {
         VaccinationDate vaccinationDate = new VaccinationDate();
         System.out.println("\nData Input to CSE Students- ");
         int a = 0;
-        String name,section;
+        String name;
         int id, batch;
 
         try {
@@ -33,40 +33,40 @@ public class CseStudentInfo {
          batch = input.nextInt();
          if (batch == 53) {
               System.out.print("Enter Your Section: ");
-                 section = input.next();
-                    if (section.equals("A"))
+                 char section = input.next().charAt(0);
+                    if (section=='A')
                     {
                         System.out.println("\nThank You," + name + " .\nYou Registration is now complete.");
                         System.out.println("Your Vaccination Date is 25 October");
                         System.out.println("You must be join this day 08.00am to 08.30am.");
                     }
-                    else if (section.equals("B"))
+                    else if (section=='B')
                     {
                         System.out.println("\nThank You," + name + ".\nYou Registration is complete");
                         System.out.println("Your Vaccination Date is 25 October");
                         System.out.println("You must be join this day 08.30pm to 09.00pm.");
                     }
-                    else if (section.equals("C")) {
+                    else if (section=='C'){
                         System.out.println("\nThank You," + name + ".You Registration is complete");
                         System.out.println("Your Vaccination Date is 26 October");
                         System.out.println("You must be join this day 09.00am to 09.30am.");
                     }
-                    else if (section.equals("D")) {
+                    else if (section =='D'){
                         System.out.println("\nThank You," + name + " .You Registration is complete");
                         System.out.println("Your Vaccination Date is "+a+" October");
                         System.out.println("You must be join this day 09.30pm to 10.00pm.");
                     }
-                    else if (section.equals("E")) {
+                    else if (section=='E'){
                         System.out.println("\nThank You," + name + " .You Registration is complete");
                         System.out.println("Your Vaccination Date is 27 October");
                         System.out.println("You must be join this day 10.00am to 10.30am.");
                     }
-                    else if (section.equals("F")) {
+                    else if (section=='F'){
                         System.out.println("\nThank You," + name + " .You Registration is complete");
                         System.out.println("Your Vaccination Date is 27 October");
                         System.out.println("You must be join this day 10.30pm to 11.00pm.");
                     }
-                    else if (section.equals("G")) {
+                    else if (section=='G') {
                         System.out.println("\nThank You," + name + " .You Registration is complete");
                         System.out.println("Your Vaccination Date is 28 October");
                         System.out.println("You must be join this day 11.00am to 11.30am.");

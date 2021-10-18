@@ -4,7 +4,6 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
-    String identity;
 
     public static void main(String[] args) throws FileNotFoundException {
 
@@ -14,14 +13,19 @@ public class Main {
 
 
         Scanner input = new Scanner(System.in);
-        System.out.print("\nAre you member Of Leading University(Yes/No): ");
-        String identity = input.next();
+        System.out.print("Are you member Of Leading University(Y/N): ");
+        char identity = input.next().charAt(0);
 
-        if (identity.equals("Yes")) {
+        //if (identity.equals("Y")) {
+        if (identity=='Y') {
+            System.out.println("****************************************");
             System.out.println("Please select Your Occupation- ");
             System.out.println("1. Student");
             System.out.println("2. Teacher ");
             System.out.println("3. Employer");
+            System.out.println("****************************************");
+
+
 
             Scanner in = new Scanner(System.in);
             System.out.print("Enter your Choose (1-3): ");
@@ -29,27 +33,15 @@ public class Main {
 
         switch (n) {
           case 1:
-                    System.out.println("\nPlease select Your Dept- ");
-
-                    System.out.println("*******************************************************");
+              System.out.println("\nPlease select Your Dept- ");
+              System.out.println("*******************************************************");
               System.out.println("1.EEE Department\t\t 2.CSE Department");
               System.out.println("3.THM Department\t\t 4.BBA Department");
               System.out.println("5.CE Department\t\t\t 6.IS Department");
-              System.out.println("7.ART Department\t\t\t 8.PH Department");
+              System.out.println("7.ART Department\t\t 8.PH Department");
               System.out.println("9.ENG Department\t\t 10.BAN Department");
               System.out.println("11.LAW Department");
-                 /*   System.out.println("1.Electrical and Electronic Engineering-(EEE) ");
-                    System.out.println("2.Computer Science and Engineering-(CSE)");
-                    System.out.println("3.Tourism & Hospitality Management-(THM) ");
-                    System.out.println("4.Business Administration-(BBA)");
-                    System.out.println("5.Civil Engineering-(CE) ");
-                    System.out.println("6.Islamic Studies-(IS) ");
-                    System.out.println("7.Architecture-(AT) ");
-                    System.out.println("8.Public Health-(PH) ");
-                    System.out.println("9. English-(ENG) ");
-                    System.out.println("10.Bangla-(BAN) ");
-                    System.out.println("11.Law-(LAW) ");*/
-                    System.out.println("***************************************************");
+              System.out.println("***************************************************");
 
 
                     Scanner inp = new Scanner(System.in);
@@ -112,7 +104,8 @@ public class Main {
 
             }
         }
-        else if (identity.equals("No"))
+        //else if (identity.equals("N"))
+        else if (identity=='N')
         {
             System.out.println("Sorry You are not Permit");
         }

@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.Formatter;
 import java.util.Scanner;
 
-public class BanStudentInfo {
+public class BanStudentInfo extends VaccinationDate {
     BanStudentInfo() throws FileNotFoundException {
 
         VaccinationDate vaccinationDate = new VaccinationDate();
