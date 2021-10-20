@@ -42,6 +42,7 @@ public class BanStudentInfo extends VaccinationDate {
             }
             else {
                 System.out.println("Sorry Your Department or  Batch number didn't match");
+
             }
 
             formatter2.format("%s %s ", id, name);
