@@ -11,12 +11,11 @@ public class CseStudentInfo {
     CseStudentInfo() throws FileNotFoundException {
 
         VaccinationDate vaccinationDate = new VaccinationDate();
-        System.out.println("\nData Input to CSE Students- ");
+        System.out.println("\nData Input to  Computer Science & Engineering Students- ");
         int a = 0;
         String name;
         int id, batch;
-        char S[] = new char[0];
-        int i;
+
 
 
         try {
@@ -37,7 +36,6 @@ public class CseStudentInfo {
          if (batch == 53) {
               System.out.print("Enter Your Section: ");
                  char section = input.next().charAt(0);
-               //  for(i=0;S[i]!='\0';i++) {
                      if (section == 'A') {
                          System.out.println("\nThank You," + name + " .\nYou Registration is now complete.");
                          System.out.println("Your Vaccination Date is 25 October");

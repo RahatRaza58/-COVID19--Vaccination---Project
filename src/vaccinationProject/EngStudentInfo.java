@@ -64,7 +64,7 @@ public class EngStudentInfo {
 
                 System.out.println();
                 System.out.println("*********************************************************");
-                System.out.println("Vaccine Application Card For English Department-");
+                System.out.println("Vaccine Application Card For ENG Department-");
                 System.out.println("Student Name: " +fullname);
                 System.out.print("Student ID: " + fullid);
                 SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd/MM/YYYY");

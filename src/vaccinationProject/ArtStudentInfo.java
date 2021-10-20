@@ -11,10 +11,11 @@ public class ArtStudentInfo {
     ArtStudentInfo() throws FileNotFoundException {
 
         VaccinationDate vaccinationDate = new VaccinationDate();
-        System.out.println("\nData Input to EEE Students-");
+        System.out.println("\nData Input to Architecture Students-");
         int a = 0;
-        String name, department,section;
+        String name;
         int id, batch;
+
         try {
             Formatter formatter2 = new Formatter("C:/COVID19  Vaccination  Project/DataEntryList/ART Students Info.txt");
             Scanner input = new Scanner(System.in);
@@ -56,15 +57,12 @@ public class ArtStudentInfo {
             File file = new File("C:/COVID19  Vaccination  Project/DataEntryList/ART Students Info.txt");
             Scanner scanner = new Scanner(file);
             while (scanner.hasNext()) {
-
-
-
                 String fullid = scanner.next();
                 String fullname = scanner.next();
 
                 System.out.println();
                 System.out.println("*********************************************************");
-                System.out.println("Vaccine Application Card For EEE Department-");
+                System.out.println("Vaccine Application Card For AR Department-");
                 System.out.println("Student Name: " +fullname);
                 System.out.print("Student ID: " + fullid);
                 SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd/MM/YYYY");
