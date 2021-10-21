@@ -64,7 +64,7 @@ public class CeStudentInfo {
 
                 System.out.println();
                 System.out.println("*********************************************************");
-                System.out.println("Vaccine Application Card For Civil Engineering Department-");
+                System.out.println("Vaccine Application Card For CE Department-");
                 System.out.println("Student Name: " +fullname);
                 System.out.print("Student ID: " + fullid);
                 SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd/MM/YYYY");

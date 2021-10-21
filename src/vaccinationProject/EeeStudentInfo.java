@@ -11,7 +11,7 @@ public class EeeStudentInfo {
     EeeStudentInfo() throws FileNotFoundException {
 
         VaccinationDate vaccinationDate = new VaccinationDate();
-        System.out.println("\nData Input to EEE Students-");
+        System.out.println("\nData Input to Electrical & Electronic Engineering Students-");
         int a = 0;
         String name, department,section;
         int id, batch;

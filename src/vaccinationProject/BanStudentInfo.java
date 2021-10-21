@@ -11,7 +11,7 @@ public class BanStudentInfo extends VaccinationDate {
     BanStudentInfo() throws FileNotFoundException {
 
         VaccinationDate vaccinationDate = new VaccinationDate();
-        System.out.println("\nData Input to EEE Students-");
+        System.out.println("\nData Input to Bangla Students-");
         int a = 0;
         String name, department,section;
         int id, batch;
@@ -42,6 +42,7 @@ public class BanStudentInfo extends VaccinationDate {
             }
             else {
                 System.out.println("Sorry Your Department or  Batch number didn't match");
+
             }
 
             formatter2.format("%s %s ", id, name);
@@ -64,7 +65,7 @@ public class BanStudentInfo extends VaccinationDate {
 
                 System.out.println();
                 System.out.println("*********************************************************");
-                System.out.println("Vaccine Application Card For EEE Department-");
+                System.out.println("Vaccine Application Card For BAN Department-");
                 System.out.println("Student Name: " +fullname);
                 System.out.print("Student ID: " + fullid);
                 SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd/MM/YYYY");

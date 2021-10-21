@@ -1,8 +1,5 @@
 package vaccinationProject;
 
-
-
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -14,7 +11,7 @@ public class FAQ {
             Scanner scanner = new Scanner(file);
             while (scanner.hasNext()) {
                 String Line = scanner.next();
-                System.out.println(line);
+                System.out.println(Line);
             }
             scanner.close();
 
