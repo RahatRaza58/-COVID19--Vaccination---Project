@@ -98,6 +98,7 @@ public class Main {
                     break;
            case 3:
                     EmployeeInfo employeeInfo = new EmployeeInfo();
+                    break;
 
            default:
                     System.out.println("*************Invalid Integer Value Selected*****************");
