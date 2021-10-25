@@ -50,7 +50,7 @@ public class Main {
                     int dept = inp.nextInt();
                     if (dept == 1)
                     {
-                        EEEStudentInfo studentInfo1 = new EEEStudentInfo();
+                        EeeStudentInfo studentInfo1 = new EeeStudentInfo();
                     }
                     else if (dept == 2)
                     {
@@ -58,35 +58,35 @@ public class Main {
                     }
                     else if (dept == 3)
                     {
-                        THMStudentInfo studentInfo3 = new THMStudentInfo();
+                        ThmStudentInfo studentInfo3 = new ThmStudentInfo();
                     }
                     else if (dept == 4)
                     {
-                        BBAStudentInfo studentInfo4 = new BBAStudentInfo();
+                        BbaStudentInfo studentInfo4 = new BbaStudentInfo();
                     }
                     else if (dept == 5)
                     {
-                        CEStudentInfo studentInfo5 = new CEStudentInfo();
+                        CsetudentInfo studentInfo5 = new CsetudentInfo();
                     }
                     else if (dept == 6)
                     {
-                        ISStudentInfo studentInfo6 = new ISStudentInfo();
+                        IsStudentInfo studentInfo6 = new IsStudentInfo();
                     }
                     else if (dept == 7)
                     {
-                        ARTStudentInfo studentInfo7 = new ARTStudentInfo();
+                        ArtStudentInfo studentInfo7 = new ArtStudentInfo();
                     }
                     else if (dept == 8)
                     {
-                        PHStudentInfo studentInfo8 = new PHStudentInfo();
+                        PhStudentInfo studentInfo8 = new PhStudentInfo();
                     }
                     else if (dept == 9)
                     {
-                        ENGGStudentInfo studentInfo9 = new ENGGStudentInfo();
+                        EngStudentInfo studentInfo9 = new EngStudentInfo();
                     }
                     else if (dept == 10)
                     {
-                        BANStudentInfo studentInfo10 = new BANStudentInfo();
+                        BanStudentInfo studentInfo10 = new BanStudentInfo();
                     }
                     else if (dept == 11)
                     {

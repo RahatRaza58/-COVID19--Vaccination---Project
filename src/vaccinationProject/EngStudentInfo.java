@@ -7,16 +7,16 @@ import java.util.Date;
 import java.util.Formatter;
 import java.util.Scanner;
 
-public class CEStudentInfo {
-    CEStudentInfo() throws FileNotFoundException {
+public class EngStudentInfo {
+    EngStudentInfo() throws FileNotFoundException {
 
         VaccinationDate vaccinationDate = new VaccinationDate();
-        System.out.println("\nData Input to Civil Engineering Department Students-");
+        System.out.println("\nData Input to English Department Students-");
         int a = 0;
         String name, department,section;
         int id, batch;
         try {
-            Formatter formatter2 = new Formatter("C:/COVID19--Vaccination---Project/DataEntryList/CE Students Info.txt");
+            Formatter formatter2 = new Formatter("C:/-COVID19--Vaccination---Project/DataEntryList/ENG Students Info.txt");
             Scanner input = new Scanner(System.in);
 
             System.out.print("Enter Student ID: ");
@@ -64,7 +64,7 @@ public class CEStudentInfo {
 
                 System.out.println();
                 System.out.println("*********************************************************");
-                System.out.println("Vaccine Application Card For CE Department-");
+                System.out.println("Vaccine Application Card For ENG Department-");
                 System.out.println("Student Name: " +fullname);
                 System.out.print("Student ID: " + fullid);
                 SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd/MM/YYYY");

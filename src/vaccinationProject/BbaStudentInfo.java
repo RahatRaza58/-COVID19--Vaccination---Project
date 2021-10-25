@@ -7,8 +7,8 @@ import java.util.Date;
 import java.util.Formatter;
 import java.util.Scanner;
 
-public class BBAStudentInfo {
-    BBAStudentInfo() throws FileNotFoundException {
+public class BbaStudentInfo {
+    BbaStudentInfo() throws FileNotFoundException {
 
         VaccinationDate vaccinationDate = new VaccinationDate();
         System.out.println("\nData Input to Business Administration Students-");
