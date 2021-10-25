@@ -10,6 +10,7 @@ import java.util.Scanner;
 
 
 public class EmployeeInfo {
+
     EmployeeInfo() throws FileNotFoundException {
         VaccinationDate vaccinationDate = new VaccinationDate();
         System.out.println("****************************************");
@@ -56,6 +57,8 @@ public class EmployeeInfo {
                 System.out.println("Vaccine Application Card For Employee-");
                 System.out.println("Name: "+fullname );
                 System.out.println("Current Age:"+currentage);
+                Address address=new Address();
+                address.display();
                 System.out.println("1st Doze taken Date:"+s);
                 SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd/MM/YYYY");
                 Date date=new Date();
@@ -75,5 +78,8 @@ public class EmployeeInfo {
             System.out.println(e);
         }
     }
-}
+
+
+    }
+
 

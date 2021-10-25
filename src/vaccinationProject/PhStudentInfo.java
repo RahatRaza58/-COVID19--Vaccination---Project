@@ -7,8 +7,8 @@ import java.util.Date;
 import java.util.Formatter;
 import java.util.Scanner;
 
-public class PhStudentInfo {
-    PhStudentInfo() throws FileNotFoundException {
+public class PHStudentInfo {
+    PHStudentInfo() throws FileNotFoundException {
 
         VaccinationDate vaccinationDate = new VaccinationDate();
         System.out.println("\nData Input to Public Health Department Students-");

@@ -7,8 +7,8 @@ import java.util.Date;
 import java.util.Formatter;
 import java.util.Scanner;
 
-public class BanStudentInfo extends VaccinationDate {
-    BanStudentInfo() throws FileNotFoundException {
+public class BANStudentInfo extends VaccinationDate {
+    BANStudentInfo() throws FileNotFoundException {
 
         VaccinationDate vaccinationDate = new VaccinationDate();
         System.out.println("\nData Input to Bangla Students-");

@@ -7,8 +7,8 @@ import java.util.Date;
 import java.util.Formatter;
 import java.util.Scanner;
 
-public class ThmStudentInfo {
-    ThmStudentInfo() throws FileNotFoundException {
+public class THMStudentInfo {
+    THMStudentInfo() throws FileNotFoundException {
 
         VaccinationDate vaccinationDate = new VaccinationDate();
         System.out.println("\nData Input to Tourism and Hospitality Management Students-");
