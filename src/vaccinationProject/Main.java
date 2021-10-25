@@ -82,7 +82,7 @@ public class Main {
                     }
                     else if (dept == 9)
                     {
-                        ENGStudentInfo studentInfo9 = new ENGStudentInfo();
+                        ENGGStudentInfo studentInfo9 = new ENGGStudentInfo();
                     }
                     else if (dept == 10)
                     {

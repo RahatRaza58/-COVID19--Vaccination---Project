@@ -7,8 +7,8 @@ import java.util.Date;
 import java.util.Formatter;
 import java.util.Scanner;
 
-public class ENGStudentInfo {
-    ENGStudentInfo() throws FileNotFoundException {
+public class ENGGStudentInfo {
+    ENGGStudentInfo() throws FileNotFoundException {
 
         VaccinationDate vaccinationDate = new VaccinationDate();
         System.out.println("\nData Input to English Department Students-");
