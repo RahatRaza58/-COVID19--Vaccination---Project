@@ -9,11 +9,16 @@ import java.util.Scanner;
 
 
 
-public class EmployeeInfo {
+public class EmployeeInfo extends VaccinationDate {
+    void versityName()
+    {
+        System.out.println("Institute Name: "+super.versity);
+    }
 
     EmployeeInfo() throws FileNotFoundException {
         VaccinationDate vaccinationDate = new VaccinationDate();
         System.out.println("****************************************");
+
         System.out.println("Employee Information Input -");
         int s=0;
         s = vaccinationDate.time(20);
@@ -21,7 +26,7 @@ public class EmployeeInfo {
         String NID,name,department,age;
         //int age;
         try{
-            Formatter formatter =new Formatter("C:/COVID19  Vaccination  Project/DataEntryList/Employee Info.txt");
+            Formatter formatter =new Formatter("C:/-COVID19--Vaccination---Project/DataEntryList/Employee Info.txt");
             Scanner input=new Scanner (System.in);
 
             System.out.print("Enter NID:");
@@ -44,7 +49,7 @@ public class EmployeeInfo {
             System.out.println(e);
         }
         try{
-            File file =new File ("C:/COVID19  Vaccination  Project/DataEntryList/Employee Info.txt");
+            File file =new File ("C:/-COVID19--Vaccination---Project/DataEntryList/Employee Info.txt");
             Scanner scanner =new Scanner (file);
             while(scanner.hasNext()){
                 String fullnid=scanner.next();

@@ -19,7 +19,7 @@ public class TeacherInfo {
 
         String NID,name,department;
         try{
-            Formatter formatter =new Formatter("C:/COVID19  Vaccination  Project/DataEntryList/Teachers Info.txt");
+            Formatter formatter =new Formatter("C:/-COVID19--Vaccination---Project/DataEntryList/Teachers Info.txt");
             Scanner input=new Scanner (System.in);
 
             System.out.print("Enter NID:");
@@ -42,7 +42,7 @@ public class TeacherInfo {
             System.out.println(e);
         }
         try{
-            File file =new File ("C:/COVID19  Vaccination  Project/DataEntryList/Teachers Info.txt");
+            File file =new File ("C:/-COVID19--Vaccination---Project/DataEntryList/Teachers Info.txt");
             Scanner scanner =new Scanner (file);
             while(scanner.hasNext()){
                 String fullnid=scanner.next();

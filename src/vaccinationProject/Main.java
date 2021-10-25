@@ -7,8 +7,10 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
 
+
         System.out.println("Welcome to Vaccination Registration Process ");
         VaccinationDate vaccinationDate = new VaccinationDate();
+        vaccinationDate.versity();
 
 
         Scanner input = new Scanner(System.in);
@@ -100,14 +102,14 @@ public class Main {
                     break;
 
            default:
-                    System.out.println("*************Invalid Integer Value Selected*****************");
+                    System.out.println("*************Your Selected Option is Invalid*****************");
 
             }
         }
 
         else if (identity=='N')
         {
-            System.out.println("Sorry You are not Permit");
+            System.out.println("\t\t\t\tSorry, You are not Permit to registration this from");
         }
         else
         {

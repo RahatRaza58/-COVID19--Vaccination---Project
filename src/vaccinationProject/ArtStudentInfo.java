@@ -17,7 +17,7 @@ public class ARTStudentInfo {
         int id, batch;
 
         try {
-            Formatter formatter2 = new Formatter("C:/COVID19  Vaccination  Project/DataEntryList/ART Students Info.txt");
+            Formatter formatter2 = new Formatter("C:/-COVID19--Vaccination---Project/DataEntryList/ART Students Info.txt");
             Scanner input = new Scanner(System.in);
 
             System.out.print("Enter Student ID: ");
@@ -54,7 +54,7 @@ public class ARTStudentInfo {
             System.out.println(e);
         }
         try {
-            File file = new File("C:/COVID19  Vaccination  Project/DataEntryList/ART Students Info.txt");
+            File file = new File("C:/-COVID19--Vaccination---Project/DataEntryList/ART Students Info.txt");
             Scanner scanner = new Scanner(file);
             while (scanner.hasNext()) {
                 String fullid = scanner.next();

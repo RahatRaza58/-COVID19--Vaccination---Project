@@ -1,10 +1,16 @@
 package vaccinationProject;
 
 public class VaccinationDate {
+    protected String versity;
+
     public int time(int date) {
         return date;
     }
 
+
+    public void versity() {
+        String versity="Leading University";
+    }
 }
 /*          System.out.println("Please select Your Department- ");
             System.out.println("1. CSE");

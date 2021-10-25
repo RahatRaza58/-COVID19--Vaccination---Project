@@ -16,7 +16,7 @@ public class BBAStudentInfo {
         String name, department,section;
         int id, batch;
         try {
-            Formatter formatter2 = new Formatter("C:/COVID19  Vaccination  Project/DataEntryList/BBA Students Info.txt");
+            Formatter formatter2 = new Formatter("C:/-COVID19--Vaccination---Project/DataEntryList/BBA Students Info.txt");
             Scanner input = new Scanner(System.in);
 
             System.out.print("Enter Student ID: ");
@@ -53,7 +53,7 @@ public class BBAStudentInfo {
             System.out.println(e);
         }
         try {
-            File file = new File("C:/COVID19  Vaccination  Project/DataEntryList/BBA Students Info.txt");
+            File file = new File("C:/-COVID19--Vaccination---Project/DataEntryList/BBA Students Info.txt");
             Scanner scanner = new Scanner(file);
             while (scanner.hasNext()) {
 

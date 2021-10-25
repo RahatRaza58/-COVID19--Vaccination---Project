@@ -19,7 +19,7 @@ public class CSEStudentInfo {
 
 
         try {
-            Formatter formatter2 = new Formatter("C:/COVID19  Vaccination  Project/DataEntryList/CSE Student Info.txt");
+            Formatter formatter2 = new Formatter("C:/-COVID19--Vaccination---Project/DataEntryList/CSE Student Info.txt");
             Scanner input = new Scanner(System.in);
 
             System.out.print("Enter Student ID: ");
@@ -111,7 +111,7 @@ public class CSEStudentInfo {
             System.out.println(e);
         }
         try {
-            File file = new File("C:/COVID19  Vaccination  Project/DataEntryList/CSE Student Info.txt");
+            File file = new File("C:/-COVID19--Vaccination---Project/DataEntryList/CSE Student Info.txt");
             Scanner scanner = new Scanner(file);
             while (scanner.hasNext()) {
 
