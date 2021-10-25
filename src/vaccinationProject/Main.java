@@ -24,12 +24,13 @@ public class Main {
             System.out.println("1. Student");
             System.out.println("2. Teacher ");
             System.out.println("3. Employer");
+            System.out.println("4. FAQ about covid-19");
             System.out.println("****************************************");
 
 
 
             Scanner in = new Scanner(System.in);
-            System.out.print("Enter your Choose (1-3): ");
+            System.out.print("Enter your Choose (1-4): ");
             int n = in.nextInt();
 
         switch (n) {
@@ -54,7 +55,7 @@ public class Main {
                     }
                     else if (dept == 2)
                     {
-                        CSEStudentInfo studentInfo2 = new CSEStudentInfo();
+                        CseStudentInfo studentInfo2 = new CseStudentInfo();
                     }
                     else if (dept == 3)
                     {
@@ -99,6 +100,9 @@ public class Main {
                     break;
            case 3:
                     EmployeeInfo employeeInfo = new EmployeeInfo();
+                    break;
+            case 4:
+                    FAQ faq =new FAQ ();
                     break;
 
            default:
