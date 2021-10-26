@@ -5,25 +5,27 @@ import java.util.Scanner;
 
 public class Main {
 
+
     public static void main(String[] args) throws FileNotFoundException {
 
 
-        System.out.println("Welcome to Vaccination Registration Process ");
+
         VaccinationDate vaccinationDate = new VaccinationDate();
         vaccinationDate.versity();
+        System.out.println("Welcome to Vaccination Registration Process ");
+
 
 
         Scanner input = new Scanner(System.in);
         System.out.print("Are you member Of Leading University(Y/N): ");
         char identity = input.next().charAt(0);
 
-        //if (identity.equals("Y")) {
         if (identity=='Y') {
             System.out.println("****************************************");
             System.out.println("Current Status of Profession- ");
             System.out.println("1. Student");
             System.out.println("2. Teacher ");
-            System.out.println("3. Employer");
+            System.out.println("3. Employee");
             System.out.println("4. FAQ about covid-19");
             System.out.println("****************************************");
 
@@ -67,7 +69,7 @@ public class Main {
                     }
                     else if (dept == 5)
                     {
-                        CsetudentInfo studentInfo5 = new CsetudentInfo();
+                        CeStudentInfo studentInfo5 = new CeStudentInfo();
                     }
                     else if (dept == 6)
                     {

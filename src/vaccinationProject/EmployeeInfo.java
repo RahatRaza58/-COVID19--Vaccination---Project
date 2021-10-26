@@ -10,10 +10,10 @@ import java.util.Scanner;
 
 
 public class EmployeeInfo extends VaccinationDate {
-    void versityName()
+    /*void versityName()
     {
         System.out.println("Institute Name: "+super.versity);
-    }
+    }*/
 
     EmployeeInfo() throws FileNotFoundException {
         VaccinationDate vaccinationDate = new VaccinationDate();

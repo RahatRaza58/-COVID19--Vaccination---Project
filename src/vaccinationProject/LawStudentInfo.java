@@ -7,13 +7,13 @@ import java.util.Date;
 import java.util.Formatter;
 import java.util.Scanner;
 
-public class LawStudentInfo {
+public class LawStudentInfo extends  VaccinationDate{
     LawStudentInfo() throws FileNotFoundException {
 
         VaccinationDate vaccinationDate = new VaccinationDate();
         System.out.println("\nData Input to LAW Students-");
         int a = 0;
-        String name, department,section;
+        String name;
         int id, batch;
         try {
             Formatter formatter2 = new Formatter("C:/-COVID19--Vaccination---Project/DataEntryList/LAW Students Info.txt");

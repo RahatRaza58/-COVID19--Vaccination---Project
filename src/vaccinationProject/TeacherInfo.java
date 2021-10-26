@@ -8,7 +8,7 @@ import java.util.Formatter;
 import java.util.Scanner;
 
 
-public class TeacherInfo {
+public class TeacherInfo extends VaccinationDate{
     TeacherInfo() throws FileNotFoundException   {
 
         VaccinationDate vaccinationDate = new VaccinationDate();
